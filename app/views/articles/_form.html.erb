@@ -1,0 +1,12 @@
+<%= simple_form_for(@article) do |f| %>
+<div class="form-element">
+  <%= f.label :title %>
+  <%= f.text_field :title , class:"my-input"%>
+</div>
+<div class="form-element">
+  <%= f.label :content %>
+  <%= f.text_area :content, class:"my-input"  %>
+</div>
+
+  <%= f.submit class:"save-button" %>
+<% end %>

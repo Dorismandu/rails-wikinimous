@@ -1,0 +1,10 @@
+<h2><%= @article.title %></h1> 
+<p>
+  <%= link_to article_path(@article.id), method: :delete, data: { confirm: "Are you sure?" } do %>
+    <i class="bi bi-trash-fill"></i>
+  <% end %>
+    <%= link_to edit_article_path(@article.id) do %>
+    <i class="bi bi-pencil-fill"></i>
+  <% end %>
+</p>
+<p class="article"><%= @article.content %></p>
